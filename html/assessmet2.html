@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registaration</title>
+    <link rel="stylesheet" href="one.css">
+    <link rel="icon" href="download.png">
+</head>
+
+<body>
+    <div>
+        <h4>Student Registaration Form</h4>
+        <form action="">
+            <div class="form">
+                <!-- FIRST NAME -->
+                <div class="box" id="top">
+                    <div>
+                        <label for="firstName" class="header">First Name:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="firstName" name="name" class="input" placeholder="Enter your first name"
+                            pattern="[A-Za-z]{3,6}" required>
+                    </div>
+                </div>
+                <!-- LAST NAME -->
+                <div class="box">
+                    <div>
+                        <label for="lastName" class="header">Last Name:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="lastName" name="name" class="input" placeholder="Enter your last name"
+                            pattern="[A-Za-z]{3,6}" required>
+                    </div>
+                </div>
+                <!-- EMAIL -->
+                <div class="box">
+                    <div>
+                        <label for="email" class="header">Email:</label>
+                    </div>
+                    <div>
+                        <input type="email" id="email" name="email" class="input" placeholder="it should contain @.."
+                            required>
+                    </div>
+                </div>
+                <!-- MOBILE -->
+                <div class="box">
+                    <div>
+                        <label for="mobile" class="header">Mobile:</label>
+                    </div>
+                    <div>
+                        <input type="number" id="mobile" name="mobile" class="input"
+                            placeholder="only 10 digits are allowed" pattern="[0-9]{10}" required>
+                    </div>
+                </div>
+                <!-- GENDER -->
+                <div class="box">
+                    <div>
+                        <label class="header">Gender:</label>
+                    </div>
+                    <div id="gender">
+                        <input type="radio" id="male" name="gender" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" required>
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <!-- DOB -->
+                <div class="box">
+                    <div>
+                        <label for="dob" class="header">Date Of Birth:</label>
+                    </div>
+                    <div>
+                        <input type="date" id="dob" name="dob" class="input" required>
+                    </div>
+                </div>
+                <!-- ADDRESS -->
+                <div class="box">
+                    <div>
+                        <label for="address" class="header">Address:</label>
+                    </div>
+                    <div>
+                        <textarea name="address" id="address" cols="30" rows="10" required></textarea>
+                    </div>
+                </div>
+                <!-- CITY -->
+                <div class="box">
+                    <div>
+                        <label for="city" class="header">City:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="city" name="city" class="input" required>
+                    </div>
+                </div>
+                <!-- AREA PIN -->
+                <div class="box">
+                    <div>
+                        <label for="pin" class="header">Area Pin:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="pin" name="pin" class="input" required>
+                    </div>
+                </div>
+                <!-- STATE -->
+                <div class="box">
+                    <div>
+                        <label for="state" class="header">State:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="state" name="state" class="input" required>
+                    </div>
+                </div>
+                <!-- QUALIFICATION -->
+                <div>
+                    <label for="qualification" class="header">Qualification:</label>
+                    <select name="qualification" id="qualification">
+                        <option value="">Select Qualification</option>
+                        <option value="highschool">High School</option>
+                        <option value="graduate">Graduate</option>
+                        <option value="phd">PH.D</option>
+                    </select>
+                </div>
+                <!-- SPECIALIZATION -->
+                <div id="one">
+                    <div>
+                        <label for="specialization" class="header">Specialization:</label>
+                    </div>
+                    <div id="cict">
+                        <div>
+                            <input type="checkbox" name="specialization" id="cs"> <label for="cs">Computer
+                                Science</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="specialization" id="it"> <label for="it">Information
+                                Technology</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="specialization" id="ca"> <label for="ca">Computer
+                                Architecture</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="specialization" id="tc"> <label for="tc">Tele
+                                Communication</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- PASSWORD -->
+                <div class="box">
+                    <div>
+                        <label for="password" class="header">Password:</label>
+                    </div>
+                    <div>
+                        <input type="password" id="password" name="password" class="input" required>
+                    </div>
+                </div>
+                <!-- REGISTERED -->
+                <div>
+                    <button class="header">Registered</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registaration</title>
+    <link rel="icon" href="download.png">
+</head>
+<body>
+    <div>
+        <h1>Student Registaration Form</h1>
+        <form action="">
+        <!-- FIRST NAME -->
+        <div>
+            <label for="firstName">First Name:</label>
+        </div>
+        <div>
+            <input type="text" id="firstName" name="name" placeholder="Enter your first name" pattern="[A-Za-z]{3,6}" required>
+        </div>
+        <!-- LAST NAME -->
+        <div>
+            <label for="lastName">Last Name:</label>
+        </div>
+        <div>
+            <input type="text" id="lastName" name="name" placeholder="Enter your last name" pattern="[A-Za-z]{3,6}" required>
+        </div>
+        <!-- EMAIL -->
+        <div>
+            <label for="email">Email:</label>
+        </div>
+        <div>
+            <input type="email" id="email" name="email" placeholder="it should contain @.." required >
+        </div>
+        <!-- MOBILE -->
+        <div>
+            <label for="mobile">Mobile:</label>
+        </div>
+        <div>
+            <input type="number" id="mobile" name="mobile" placeholder="only 10 digits are allowed" pattern="[0-9]{10}" required>
+        </div>
+        <!-- GENDER -->
+        <div>
+            <label>Gender:</label>
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" required>
+            <label for="female">Female</label>
+        </div>
+        <!-- DOB -->
+        <div>
+            <label for="dob">Date Of Birth:</label>
+        </div>
+        <div>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <!-- ADDRESS -->
+        <div>
+            <label for="address">Address:</label>
+        </div>
+        <div>
+            <textarea name="address" id="address" cols="30" rows="10" required></textarea>
+        </div>
+        <!-- CITY -->
+        <div>
+            <label for="city">City:</label>
+        </div>
+        <div>
+            <input type="text" id="city" name="city" required>
+        </div>
+        <!-- AREA PIN -->
+        <div>
+            <label for="pin">Area Pin:</label>
+        </div>
+        <div>
+            <input type="text" id="pin" name="pin" required>
+        </div>
+        <!-- STATE -->
+        <div>
+            <label for="state">State:</label>
+        </div>
+        <div>
+            <input type="text" id="state" name="state" required>
+        </div>
+        <!-- QUALIFICATION -->
+        <div>
+            <label for="qualification">Qualification:</label>
+            <select name="qualification" id="qualification">
+            <option value="">Select Qualification</option>
+            <option value="highschool">High School</option>
+            <option value="graduate">Graduate</option>
+            <option value="phd">PH.D</option>
+            </select>
+        </div>
+        <!-- SPECIALIZATION -->
+        <div>
+            <label for="specialization">Specialization:</label>
+        </div>
+        <div>
+            <input type="checkbox" name="specialization" id="cs"> <label for="cs">Computer Science</label>
+        </div>
+        <div>
+            <input type="checkbox" name="specialization" id="it"> <label for="it">Information Technology</label>
+        </div> 
+        <div>
+            <input type="checkbox" name="specialization" id="ca"> <label for="ca">Computer Architecture</label>
+        </div>
+        <div>
+            <input type="checkbox" name="specialization" id="tc"> <label for="tc">Tele Communication</label>
+        </div>
+        <!-- PASSWORD -->
+        <div>
+            <label for="password">Password:</label>
+        </div>
+        <div>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <!-- REGISTERED -->
+        <div>
+            <input type="submit" value="Registered">
+        </div>
+        </form>
+    </div>
+</body>
+</html>
