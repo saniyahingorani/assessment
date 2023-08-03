@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital clock using js</title>
+
+  <style>
+    .main {
+      position: relative;
+      height: 1000px;
+    }
+
+    .child {
+      position: absolute;
+      top: 50%;
+      left: 40%;
+    }
+
+    .dc {
+
+      /* background-image: liner-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0); */
+      background-color: black;
+      position: relative;
+      /* background-color: liner-gradient(135deg, #14ffe9, #ffeb3b, #ff00e0); */
+      margin-top: 15px;
+      text-align: center;
+      font-size: 80px;
+      height: 100px;
+      padding: 10px;
+    }
+
+    .date {
+
+      background-color: #0bd1f9;
+      color: #fff;
+      border: 2px solid #0490ac;
+      text-align: center;
+      font-size: 100px;
+      padding: 10px;
+      height: 100px;
+    }
+
+
+    .border {
+
+      place-items: center;
+
+      border: 8px solid;
+
+    }
+
+    #time {
+      border-image: linear-gradient(45deg, aqua, green, yellow, orange, red) 1;
+      background: -webkit-linear-gradient(aqua, green, yellow, orange, red);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="child">
+      <div class="date">
+        <span id="dayname">Day</span>,
+        <span id="month">Month</span>
+        <span id="dat">00</span>,
+        <span id="year">Year</span>
+      </div>
+      <!-- DIGITAL CLOCK -->
+      <div class="dc">
+        <div id="time" class="border"> 12:00:00 PM</div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script src="one.js"></script>
+</body>
+
+</html>
