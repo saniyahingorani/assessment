@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    #email,
+    #password,
+    #name {
+      text-align: left;
+    }
+
+    #clr {
+      background-color: white;
+    }
+    #reg {
+      width: 390px;
+    }
+    @media screen and (max-width:480px){
+      #reg {
+      width: 160px;
+    }
+    #font{
+      font: 10px bold;
+    }
+    }
+    @media (min-width:481px) and (max-width:768px){
+      #reg {
+      width: 240px;
+    }
+    #font{
+      font: 20px bold;
+    }
+    }
+    @media (min-width:769px) and (max-width:1024px){
+      #reg {
+      width: 320px;
+    }
+    #font{
+      font: 26px bold;
+    }
+    }
+    @media (min-width:1025px) and (max-width:1200px){
+      #reg {
+      width: 380px;
+    }
+    #font{
+      font: 31px bold;
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2 id="font">Responsive Registration Form</h2>
+    <form action="" id="form" onsubmit="return validateForm()" >
+      <!-- E-MAIL -->
+      <div class="input-group col-xs-4">
+        <span class="input-group-addon" id="clr"><i class="fa fa-envelope"></i></span>
+        <input id="email" type="email" class="form-control" name="email" placeholder="Email" required>
+      </div>
+      <br>
+      <!-- PASSWORD -->
+      <div class="input-group col-xs-4">
+        <span class="input-group-addon" id="clr"><i class="fa fa-lock"></i></span>
+        <input id="password" type="password" class="form-control" name="password" placeholder="Password" required>
+      </div>
+      <br>
+      <!-- RE-TYPE PASSWORD -->
+      <div class="input-group col-xs-4">
+        <span class="input-group-addon" id="clr"><i class="fa fa-lock"></i></span>
+        <input id="password" type="password" class="form-control" name="re-type password" placeholder="Re-type Password"
+          required>
+      </div>
+      <br>
+      <!--NAMES  -->
+      <div class="input-group col-xs-4">
+        <span class="input-group-addon" id="clr"><i class="fa fa-user"></i></span>
+        <input type="text" id="name" class="form-control" name="name" placeholder="First Name">
+
+        <span class="input-group-addon" id="clr"><i class="fa fa-user"></i></span>
+        <input type="text" id="name" class="form-control" name="name" placeholder="Last Name" required />
+      </div>
+      <br>
+      <!-- GENDER -->
+      <div class="radio">
+        <label><input type="radio" name="optradio">Male</label>
+        <label><input type="radio" name="optradio">Female</label>
+      </div>
+      <br>
+      <!-- COUNTRY -->
+      <div>
+        <select class="input-group col-xs-4">
+          <option id="text">Select a country</option>
+          <option>India</option>
+        </select>
+      </div>
+      <br>
+      <!--CHECKBOX  -->
+      <div class="form-check">
+        <label class="form-check-label" for="check1">
+          <input type="checkbox" class="form-check-input"  id="check1" name="option1" value="something">I agree with
+          terms and conditions
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="check2">
+          <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">I want to receive
+          the newsletter
+        </label>
+      </div>
+      <br>
+      <!-- REGISTER -->
+      <input id="reg" class="btn-warning" type="submit" value="Register">
+      
+    </form>
+  </div>
+</body>
+</html>
+
+<script>
+  function validateForm() {
+      var password = document.getElementById("password").value;
+
+      if (password.length < 8) {
+          alert("Password must be 8 characters.");
+          return true;
+      }
+
+      return false;
+  }
+</script>
